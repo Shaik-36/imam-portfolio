@@ -1,6 +1,12 @@
 import Image from "next/image";
 import { socialLinks } from "./config";
 
+// Button UI
+
+import {Button, ButtonGroup} from "@nextui-org/button";
+
+
+
 export default function Page() {
   return (
     <section>
@@ -17,10 +23,12 @@ export default function Page() {
       </a>
 
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        Portfolio, made simple!
+        MERN Stack Developer
       </h1>
 
       <div className="prose prose-neutral dark:prose-invert">
+
+
         <p>
           A clean, fast, and lightweight portfolio template built with Next.js,
           Vercel, and Tailwind CSS for optimal performance.
@@ -37,32 +45,30 @@ export default function Page() {
           </a>
           .
         </p>
-        <p>
-          Nextfolio is{" "}
-          <a href={socialLinks.github} target="_blank">
-            open-source
-          </a>{" "}
-          and fully customizable, making it easy to add more features.
-        </p>
-        <p>
-          <a
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F1msirius%2FNextfolio"
-            target="_blank"
-          >
-            Deploy
-          </a>{" "}
-          your Nextfolio site with Vercel in minutes and follow the set up
-          instructions in the{" "}
-          <a href="/blog/getting-started">Getting Started</a> post.
-        </p>
-        <p>
-          Built and maintained by{" "}
-          <a href="https://imsirius.xyz/" target="_blank">
-            Sirius
-          </a>
-          .
-        </p>
+
       </div>
+
+      <div className="flex h-10 px-6 justify-start py-10 space-x-8">
+
+          <Button 
+            color="secondary"
+            variant="ghost"
+          >
+            Resume
+            </Button>
+
+            <Button 
+            color="secondary"
+            variant="ghost"
+          >
+            Check My Projects
+            </Button>
+
+        </div>
+
+        
+
+
     </section>
   );
 }
