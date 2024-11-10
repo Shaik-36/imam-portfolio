@@ -151,3 +151,51 @@ table {
 .title {
   text-wrap: balance;
 }
+
+
+/* Gradient Border */
+@layer utilities {
+  .border-gradient-animated {
+    border-image: linear-gradient(45deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF);
+    border-image-slice: 1;
+  }
+}
+
+/* Gradient Color Change */
+@keyframes gradient-animation {
+  0% {
+    border-image-source: linear-gradient(45deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF);
+  }
+  50% {
+    border-image-source: linear-gradient(45deg, #4D96FF, #6BCB77, #FFD93D, #FF6B6B);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF);
+  }
+}
+
+.hover\:border-gradient-animated:hover {
+  animation: gradient-animation 4s infinite;
+}
+
+/* Shine Effect */
+@keyframes shine {
+  from {
+    background-position: -100%;
+  }
+  to {
+    background-position: 200%;
+  }
+}
+
+.hover\:shine {
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 60%);
+  background-size: 200% 100%;
+  animation: shine 1.5s forwards;
+  background-clip: padding-box;
+}
+
+/* Shadow Effect */
+.hover\:shadow-lg:hover {
+  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.3);
+}
