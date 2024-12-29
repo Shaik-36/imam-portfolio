@@ -28,15 +28,17 @@ export default function Page() {
       </a>
 
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        MERN Stack Developer
+        Full Stack Developer
       </h1>
 
       <div className="prose prose-neutral dark:prose-invert">
 
-
+      <h3>Profile Summary </h3>
         <p>
-          A clean, fast, and lightweight portfolio template built with Next.js,
-          Vercel, and Tailwind CSS for optimal performance.
+        
+A highly skilled and adaptable Full Stack Developer with expertise in JavaScript (ES6+), React.js, Node.js, and TypeScript. Proven experience designing and developing scalable, responsive web applications, with a strong focus on UI/UX design, performance optimization, and accessibility standards. Proficient in modern frameworks and tools such as Next.js, Tailwind CSS, Redux Toolkit, Flask, and Django, and well-versed in cloud platforms like AWS, Azure, and GCP.
+
+Hands-on experience in building secure backend systems, RESTful APIs, and integrating third-party services, with advanced knowledge in version control, DevOps tools, and CI/CD pipelines. Demonstrates a collaborative and problem-solving mindset, contributing effectively to cross-functional teams. Passionate about innovation and continuously learning industry trends, with a focus on delivering high-quality, maintainable, and scalable solutions.
         </p>
         <p>
           Nextfolio includes all the essentials for a stunning portfolio: SEO,
